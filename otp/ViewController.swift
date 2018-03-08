@@ -55,6 +55,18 @@ class ViewController: UIViewController {
                 break
             }
         }
+        if text?.utf8.count == 0{
+            switch textField{
+            case textFour:
+                textThree.becomeFirstResponder()
+            case textThree:
+                textTwo.becomeFirstResponder()
+            case textTwo:
+                textOne.becomeFirstResponder()
+            default:
+                break
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
